@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 .card-container {
     display: flex;
     justify-content: center;
@@ -19,8 +20,8 @@ body {
 }
 
 .card {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     perspective: 1000px;
     flex: 0 0 auto; /* Prevents cards from shrinking */
     position: relative;
@@ -29,6 +30,7 @@ body {
 
 .card-container.row .card {
     flex: 1; /* Makes all cards occupy equal space in a row */
+ 
 }
 
 .card-inner {
@@ -58,6 +60,8 @@ body {
 .card-front {
     background-color: transparent; /* No background color */
     color: #000; /* Change font color for better visibility */
+   
+
 }
 
 .card-front img, .card-back img {
@@ -90,4 +94,16 @@ body {
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Change layout to column */
+
+    }
+
+    .card {
+        margin-bottom: 20px; /* Add space between cards */
+     
+    }
 }
