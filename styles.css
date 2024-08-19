@@ -20,8 +20,8 @@ body {
 }
 
 .card {
-    width: 350px;
-    height: 500px;
+    width: 20vw;
+    height: 80vh;
     perspective: 1000px;
     flex: 0 0 auto; 
     position: relative;
@@ -104,6 +104,10 @@ body {
         gap: 10px;
     }
 
+    .card {
+        width: 80vw;
+     
+    }
     .card.full-screen {
 
         width: 90vw;
@@ -111,6 +115,6 @@ body {
      
     }
 
-
+  
 
 }
