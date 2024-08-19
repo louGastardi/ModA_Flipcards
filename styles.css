@@ -103,9 +103,11 @@ body {
         margin-top: 1400px;
         gap: 10px;
     }
+ .card.full-screen {
 
-
-
-
+        width: 90vw;
+        height: 90vh;
+     
+    }
 
 }
