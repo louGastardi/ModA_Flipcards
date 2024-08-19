@@ -9,28 +9,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
 .card-container {
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping to multiple rows */
     justify-content: center;
     align-items: center;
     gap: 20px;
-    max-width: 100%; 
-    flex-direction: row; 
+    max-width: 80vw; /* Adjust as necessary */
 }
 
 .card {
-    width: 20vw;
-    height: 80vh;
+    width: 30vw;
+    height: 30vh;
     perspective: 1000px;
     flex: 0 0 auto; 
     position: relative;
-}
-
-
-.card-container.row .card {
-    flex: 1; 
- 
 }
 
 .card-inner {
@@ -52,23 +45,20 @@ body {
     align-items: center;
     font-size: 24px;
     color: white;
-
-    overflow: hidden; /* Ensures content does not overflow */
-    border-radius: 10px; /* Optional: adds rounded corners to the card */
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .card-front {
-    background-color: transparent; /* No background color */
-    color: #000; /* Change font color for better visibility */
-   
-
+    background-color: transparent;
+    color: #000;
 }
 
 .card-front img, .card-back img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    border-radius: inherit; /* Inherit the border-radius from the card */
+    border-radius: inherit;
 }
 
 .card-back {
@@ -109,15 +99,7 @@ body {
     #card1:not(.flip) {
         margin-top: 100vh;
     }
-   
- 
     .card.full-screen {
-
         width: 90vw;
-
-     
     }
-
-  
-
 }
