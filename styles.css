@@ -96,14 +96,16 @@ body {
     display: none;
 }
 
-
 @media (max-width: 786px) {
     .card-container {
-        flex-direction: column; 
-
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1400px;
+        gap: 10px;
     }
 
-    .card {
-        margin-bottom: 20px; 
-    }
+
+
+
+
 }
