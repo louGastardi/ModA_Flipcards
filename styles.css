@@ -100,17 +100,21 @@ body {
     .card-container {
         flex-direction: column;
         align-items: center;
-        margin-top: 1400px;
         gap: 10px;
     }
-
-    .card {
+    .card{
         width: 80vw;
-     
+        height: 50vh;
     }
+    #card1  {
+        margin-top: 100vh;   }
+    
+   
+ 
     .card.full-screen {
 
         width: 90vw;
+
      
     }
 
