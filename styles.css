@@ -106,9 +106,9 @@ body {
         width: 80vw;
         height: 50vh;
     }
-    #card1  {
-        margin-top: 100vh;   }
-    
+    #card1:not(.flip) {
+        margin-top: 100vh;
+    }
    
  
     .card.full-screen {
